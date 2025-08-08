@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
-    Menu
+    Menu,
+    X
 } from 'lucide-react';
 
 const Navbar = () => {
