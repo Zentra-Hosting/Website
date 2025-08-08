@@ -41,9 +41,9 @@ const Footer = () => {
                         <h4 className="text-white font-semibold mb-4">Company</h4>
                         <ul className="space-y-2 text-slate-400">
                             <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                            <li><button onClick={() => { navigate('/refunds') }} className="hover:text-white transition-colors">Refunds</button></li>
                             <li><button onClick={() => { navigate('/terms') }} className="hover:text-white transition-colors">Terms of Service</button></li>
-                            <li><button onClick={() => { navigate('/terms') }} className="hover:text-white transition-colors">Privacy</button></li>
+                            <li><button onClick={() => { navigate('/privacy') }} className="hover:text-white transition-colors">Privacy</button></li>
                         </ul>
                     </div>
                 </div>
