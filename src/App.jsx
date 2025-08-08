@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { 
-  Server, 
-  Bot, 
-  Zap, 
-  Shield, 
-  Clock, 
-  Users, 
-  Check, 
-  ArrowRight, 
-  Menu, 
+import { useState, useEffect } from 'react';
+import {
+  Server,
+  Bot,
+  Zap,
+  Shield,
+  Clock,
+  Users,
+  Check,
+  ArrowRight,
+  Menu,
   X,
   Play,
   Globe,
@@ -18,6 +18,9 @@ import {
 } from 'lucide-react';
 
 function App() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const features = [
@@ -45,53 +48,56 @@ function App() {
 
   const discordBotPlans = [
     {
-      name: "Basic Bot",
-      price: "$5",
+      name: "Starter Bot",
+      price: "$1.49",
       period: "/month",
-      description: "Perfect for small Discord servers and simple bots",
+      description: "Perfect for small discord bots.",
       features: [
-        "1 Discord Bot",
         "512MB RAM",
         "5GB Storage",
-        "Basic DDoS Protection",
         "Community Support",
         "99.5% Uptime SLA"
       ],
       popular: false
     },
     {
-      name: "Pro Bot",
-      price: "$15",
+      name: "Advanced Bot",
+      price: "$2.50",
       period: "/month",
-      description: "Ideal for active Discord communities with advanced bots",
+      description: "Ideal for bigger discord bots.",
       features: [
-        "3 Discord Bots",
-        "2GB RAM per bot",
+        "1GB RAM",
         "25GB Storage",
-        "Advanced DDoS Protection",
-        "Priority Support",
         "99.9% Uptime SLA",
-        "Automated Backups",
-        "Custom Bot Status"
+        "Automated Backups"
       ],
       popular: true
     },
     {
-      name: "Enterprise Bot",
-      price: "$45",
+      name: "Ultimate Bot",
+      price: "$4",
       period: "/month",
-      description: "For large Discord servers and professional bot operations",
+      description: "For large discord bots.",
       features: [
-        "10 Discord Bots",
-        "4GB RAM per bot",
-        "100GB Storage",
-        "Enterprise DDoS Protection",
-        "24/7 Phone Support",
+        "2GB RAM",
+        "60GB Storage",
         "99.99% Uptime SLA",
         "Automated Backups",
-        "Priority Queue",
-        "Custom Integrations",
-        "Dedicated Support Manager"
+        "Priority Queue"
+      ],
+      popular: false
+    },
+    {
+      name: "Unlimited Bot",
+      price: "$10",
+      period: "/month",
+      description: "For the largest of discord bots. (Ideal for bots in 1k+ discord servers)",
+      features: [
+        "6GB RAM",
+        "100GB Storage",
+        "99.99% Uptime SLA",
+        "Automated Backups",
+        "Priority Queue"
       ],
       popular: false
     }
@@ -99,53 +105,61 @@ function App() {
 
   const minecraftServerPlans = [
     {
-      name: "Small Server",
+      name: "Dirt Plan",
       price: "$8",
       period: "/month",
       description: "Perfect for small friend groups and family servers",
       features: [
-        "1 Minecraft Server",
         "2GB RAM",
         "10GB SSD Storage",
         "Up to 10 Players",
-        "Basic DDoS Protection",
-        "Community Support",
         "Daily Backups"
       ],
       popular: false
     },
     {
-      name: "Medium Server",
-      price: "$20",
+      name: "Iron Plan",
+      price: "$12",
       period: "/month",
       description: "Great for growing communities and modded servers",
       features: [
-        "1 Minecraft Server",
-        "6GB RAM",
+        "4GB RAM",
         "50GB SSD Storage",
         "Up to 50 Players",
-        "Advanced DDoS Protection",
         "Priority Support",
-        "Hourly Backups",
+        "Daily Backups",
         "Plugin/Mod Support",
         "Custom Domain"
       ],
       popular: true
     },
     {
-      name: "Large Server",
-      price: "$50",
+      name: "Diamond Plan",
+      price: "$18",
       period: "/month",
       description: "For large communities and professional server networks",
       features: [
-        "2 Minecraft Servers",
-        "12GB RAM per server",
-        "200GB SSD Storage",
-        "Unlimited Players",
-        "Enterprise DDoS Protection",
+        "8GB RAM per server",
+        "100GB SSD Storage",
+        "Up to 200 Players",
         "24/7 Priority Support",
-        "Real-time Backups",
-        "Full Plugin/Mod Support",
+        "Hourly Backups",
+        "Custom Domains",
+        "Server Network Support"
+      ],
+      popular: false
+    },
+    {
+      name: "Netherite Plan",
+      price: "$25",
+      period: "/month",
+      description: "For large communities and professional server networks",
+      features: [
+        "12GB RAM per server",
+        "150GB SSD Storage",
+        "Unlimited Players",
+        "24/7 Priority Support",
+        "Hourly Backups",
         "Custom Domains",
         "Server Network Support"
       ],
@@ -167,12 +181,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg">
-                <Server className="w-6 h-6 text-white" />
-              </div>
+              <img src={"src/assets/logo.svg"} width={35} />
               <span className="text-xl font-bold text-white">Zentra Hosting</span>
             </div>
-            
+
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-slate-300 hover:text-white transition-colors">Features</a>
               <a href="#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
@@ -182,7 +194,7 @@ function App() {
               </button>
             </div>
 
-            <button 
+            <button
               className="md:hidden text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -302,8 +314,8 @@ function App() {
               </div>
             </div>
             <div className="bg-slate-800/30 p-8 rounded-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
                 alt="Discord Bot Dashboard"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -312,8 +324,8 @@ function App() {
 
           <div className="mt-16 grid md:grid-cols-2 gap-12 items-center">
             <div className="bg-slate-800/30 p-8 rounded-xl order-2 md:order-1">
-              <img 
-                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop"
                 alt="Minecraft Server Management"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -371,15 +383,14 @@ function App() {
                 Reliable hosting for your Discord bots with 24/7 uptime and lightning-fast performance
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className='grid md:grid-cols-4 gap-8'>
               {discordBotPlans.map((plan, index) => (
-                <div 
-                  key={index} 
-                  className={`relative bg-slate-800/50 rounded-xl border p-8 transition-all hover:transform hover:scale-105 ${
-                    plan.popular 
-                      ? 'border-blue-500 ring-2 ring-blue-500/20' 
-                      : 'border-slate-700 hover:border-slate-600'
-                  }`}
+                <div
+                  key={index}
+                  className={`relative bg-slate-800/50 rounded-xl border p-8 transition-all hover:transform hover:scale-105 ${plan.popular
+                    ? 'border-blue-500 ring-2 ring-blue-500/20'
+                    : 'border-slate-700 hover:border-slate-600'
+                    }`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -388,7 +399,7 @@ function App() {
                       </span>
                     </div>
                   )}
-                  
+
                   <div className="text-center mb-8">
                     <h4 className="text-2xl font-bold text-white mb-2">{plan.name}</h4>
                     <p className="text-slate-400 mb-4">{plan.description}</p>
@@ -407,11 +418,10 @@ function App() {
                     ))}
                   </ul>
 
-                  <button className={`w-full py-3 rounded-lg font-semibold transition-all ${
-                    plan.popular
-                      ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700'
-                      : 'bg-slate-700 text-white hover:bg-slate-600'
-                  }`}>
+                  <button className={`w-full py-3 rounded-lg font-semibold transition-all ${plan.popular
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700'
+                    : 'bg-slate-700 text-white hover:bg-slate-600'
+                    }`}>
                     Get Started
                   </button>
                 </div>
@@ -430,15 +440,14 @@ function App() {
                 High-performance Minecraft servers with mod support and unlimited player capacity
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-4 gap-8">
               {minecraftServerPlans.map((plan, index) => (
-                <div 
-                  key={index} 
-                  className={`relative bg-slate-800/50 rounded-xl border p-8 transition-all hover:transform hover:scale-105 ${
-                    plan.popular 
-                      ? 'border-green-500 ring-2 ring-green-500/20' 
-                      : 'border-slate-700 hover:border-slate-600'
-                  }`}
+                <div
+                  key={index}
+                  className={`relative bg-slate-800/50 rounded-xl border p-8 transition-all hover:transform hover:scale-105 ${plan.popular
+                    ? 'border-green-500 ring-2 ring-green-500/20'
+                    : 'border-slate-700 hover:border-slate-600'
+                    }`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -447,7 +456,7 @@ function App() {
                       </span>
                     </div>
                   )}
-                  
+
                   <div className="text-center mb-8">
                     <h4 className="text-2xl font-bold text-white mb-2">{plan.name}</h4>
                     <p className="text-slate-400 mb-4">{plan.description}</p>
@@ -466,11 +475,10 @@ function App() {
                     ))}
                   </ul>
 
-                  <button className={`w-full py-3 rounded-lg font-semibold transition-all ${
-                    plan.popular
-                      ? 'bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700'
-                      : 'bg-slate-700 text-white hover:bg-slate-600'
-                  }`}>
+                  <button className={`w-full py-3 rounded-lg font-semibold transition-all ${plan.popular
+                    ? 'bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700'
+                    : 'bg-slate-700 text-white hover:bg-slate-600'
+                    }`}>
                     Get Started
                   </button>
                 </div>
@@ -515,7 +523,7 @@ function App() {
                 The most reliable platform for hosting Discord bots and Minecraft servers.
               </p>
             </div>
-            
+
             <div>
               <h4 className="text-white font-semibold mb-4">Product</h4>
               <ul className="space-y-2 text-slate-400">
@@ -525,7 +533,7 @@ function App() {
                 <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="text-white font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-slate-400">
@@ -535,7 +543,7 @@ function App() {
                 <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="text-white font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-slate-400">
@@ -546,7 +554,7 @@ function App() {
               </ul>
             </div>
           </div>
-          
+
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
             <p>&copy; 2025 Zentra Hosting. All rights reserved.</p>
           </div>
