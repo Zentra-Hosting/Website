@@ -514,9 +514,7 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg">
-                  <Server className="w-6 h-6 text-white" />
-                </div>
+                <img src={"src/assets/logo.svg"} width={35} />
                 <span className="text-xl font-bold text-white">Zentra Hosting</span>
               </div>
               <p className="text-slate-400">
