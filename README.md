@@ -82,3 +82,6 @@ The project is configured for easy deployment to Netlify:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Netlify Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/615d19e9-a98c-41ec-8a38-6bc6f01b2430/deploy-status)](https://app.netlify.com/projects/zentrahosting/deploys)
