@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import ScrollToTop from '../components/ScrollToTop';
+import '../assets/style/privacy.css';
 
 function PrivacyPolicy() {
     useEffect(() => {
@@ -7,12 +8,11 @@ function PrivacyPolicy() {
     }, []);
 
     return (
-        <div>
+        <div className='min-h-screen bg-slate-900 text-white p-6'>
             <ScrollToTop />
             <head>
-                <title>Zentra Hosting | Privacy policy</title>
+                <title>Zentra Hosting | Privacy Policy</title>
                 <meta name="description" content="Zentra Hosting Privacy Policy" />
-                <style href='src/assets/style/privacy.css'></style>
             </head>
             <h1>PRIVACY POLICY</h1>
 
