@@ -11,137 +11,191 @@ function PrivacyPolicy() {
             <ScrollToTop />
             <head>
                 <title>Zentra Hosting | Privacy policy</title>
+                <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #fff;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        ul {
+            margin: 15px 0 20px 25px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+        strong {
+            color: #fff;
+        }
+        .intro {
+            font-size: 1.1em;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 30px;
+            border-radius: 0 5px 5px 0;
+        }
+        .contact {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
             </head>
             <div className="min-h-screen bg-slate-900">
                 <div className='text-white p-6'>
                     <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
                     <p className="mb-2">Last updated: August 08, 2025</p>
-                    <p className="mb-4">
-                        This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
-                    </p>
-                    <p className="mb-4">
-                        We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
-                    </p>
+                   <div class="container">
 
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Interpretation and Definitions</h2>
-                    <h3 className="text-xl font-semibold mb-2">Interpretation</h3>
-                    <p className="mb-4">
-                        The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
-                    </p>
+<h1>PRIVACY POLICY</h1>
 
-                    <h3 className="text-xl font-semibold mb-2">Definitions</h3>
-                    <p className="mb-4">For the purposes of this Privacy Policy:</p>
-                    <ul className="list-disc list-inside mb-4">
-                        <li><strong>Account:</strong> means a unique account created for You to access our Service or parts of our Service.</li>
-                        <li><strong>Affiliate:</strong> means an entity that controls, is controlled by or is under common control with a party.</li>
-                        <li><strong>Company:</strong> refers to Zentra Hosting.</li>
-                        <li><strong>Cookies:</strong> are small files placed on Your device by a website.</li>
-                        <li><strong>Country:</strong> refers to New South Wales, Australia.</li>
-                        <li><strong>Device:</strong> means any device that can access the Service.</li>
-                        <li><strong>Personal Data:</strong> is any information that relates to an identified or identifiable individual.</li>
-                        <li><strong>Service:</strong> refers to the Website.</li>
-                        <li><strong>Service Provider:</strong> means any natural or legal person who processes the data on behalf of the Company.</li>
-                        <li><strong>Third-party Social Media Service:</strong> refers to any website or social network through which a User can log in or create an account.</li>
-                        <li><strong>Usage Data:</strong> refers to data collected automatically.</li>
-                        <li><strong>Website:</strong> refers to Zentra Hosting, accessible from <a href="https://zentrahosting.xyz/" rel="external nofollow noopener" target="_blank" className="text-blue-400">https://zentrahosting.xyz/</a>.</li>
-                        <li><strong>You:</strong> means the individual accessing or using the Service.</li>
-                    </ul>
+<div class="intro">
+    This Privacy Policy applies to all personal information collected by Zentra Hosting (we, us or our) via the website located at zentrahosting.xyz (Website).
+</div>
 
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Collecting and Using Your Personal Data</h2>
-                    <h3 className="text-xl font-semibold mb-2">Types of Data Collected</h3>
-                    <h4 className="font-semibold mb-2">Personal Data</h4>
-                    <p className="mb-4">
-                        While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
-                    </p>
-                    <ul className="list-disc list-inside mb-4">
-                        <li>Email address</li>
-                        <li>First name and last name</li>
-                        <li>Address, State, Province, ZIP/Postal code, City</li>
-                        <li>Usage Data</li>
-                    </ul>
+<h2>What information do we collect?</h2>
 
-                    <h4 className="font-semibold mb-2">Usage Data</h4>
-                    <p className="mb-4">
-                        Usage Data is collected automatically when using the Service and may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, and more.
-                    </p>
+<p>The kind of Personal Information that we collect from you will depend on how you use the website. The Personal Information which we collect and hold about you may include:</p>
 
-                    <h4 className="font-semibold mb-2">Information from Third-Party Social Media Services</h4>
-                    <p className="mb-4">
-                        The Company allows You to create an account and log in to use the Service through various Third-party Social Media Services such as Google, Facebook, Instagram, Twitter, and LinkedIn.
-                    </p>
+<ul>
+    <li>Login Credentials</li>
+    <li>Email Address</li>
+    <li>Name</li>
+    <li>Phone Number</li>
+    <li>Address</li>
+</ul>
 
-                    <h4 className="font-semibold mb-2">Tracking Technologies and Cookies</h4>
-                    <p className="mb-4">
-                        We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts.
-                    </p>
+<h2>Types of information</h2>
 
-                    <h3 className="text-xl font-semibold mb-2">Use of Your Personal Data</h3>
-                    <p className="mb-4">The Company may use Personal Data for the following purposes:</p>
-                    <ul className="list-disc list-inside mb-4">
-                        <li><strong>To provide and maintain our Service:</strong> including to monitor the usage of our Service.</li>
-                        <li><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service.</li>
-                        <li><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract.</li>
-                        <li><strong>To contact You:</strong> via email, telephone calls, SMS, or other forms of communication.</li>
-                        <li><strong>To provide You:</strong> with news, special offers, and general information about other goods and services.</li>
-                        <li><strong>To manage Your requests:</strong> to attend and manage Your requests to Us.</li>
-                        <li><strong>For business transfers:</strong> to evaluate or conduct a merger, divestiture, or other sale.</li>
-                        <li><strong>For other purposes:</strong> such as data analysis and improving our Service.</li>
-                    </ul>
+<p>The Privacy Act 1998 (Cth) (Privacy Act) defines types of information, including Personal Information and Sensitive Information.</p>
 
-                    <h3 className="text-xl font-semibold mb-2">Retention of Your Personal Data</h3>
-                    <p className="mb-4">
-                        The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy.
-                    </p>
+<p><strong>Personal Information</strong> means information or an opinion about an identified individual or an individual who is reasonably identifiable:</p>
 
-                    <h3 className="text-xl font-semibold mb-2">Transfer of Your Personal Data</h3>
-                    <p className="mb-4">
-                        Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of Your jurisdiction.
-                    </p>
+<ul>
+    <li>whether the information or opinion is true or not; and</li>
+    <li>whether the information or opinion is recorded in a material form or not.</li>
+</ul>
 
-                    <h3 className="text-xl font-semibold mb-2">Delete Your Personal Data</h3>
-                    <p className="mb-4">
-                        You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.
-                    </p>
+<p>If the information does not disclose your identity or enable your identity to be ascertained, it will in most cases not be classified as “Personal Information” and will not be subject to this privacy policy.</p>
 
-                    <h3 className="text-xl font-semibold mb-2">Disclosure of Your Personal Data</h3>
-                    <h4 className="font-semibold mb-2">Business Transactions</h4>
-                    <p className="mb-4">
-                        If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred.
-                    </p>
+<p><strong>Sensitive Information</strong> is defined in the Privacy Act as including information or opinion about such things as an individual's racial or ethnic origin, political opinions, membership of a political association, religious or philosophical beliefs, membership of a trade union or other professional body, criminal record or health information.</p>
 
-                    <h4 className="font-semibold mb-2">Law enforcement</h4>
-                    <p className="mb-4">
-                        Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law.
-                    </p>
+<p>Sensitive Information will be used by us only:</p>
 
-                    <h3 className="text-xl font-semibold mb-2">Security of Your Personal Data</h3>
-                    <p className="mb-4">
-                        The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet is 100% secure.
-                    </p>
+<ul>
+    <li>for the primary purpose for which it was obtained;</li>
+    <li>for a secondary purpose that is directly related to the primary purpose; and</li>
+    <li>with your consent or where required or authorised by law.</li>
+</ul>
 
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Children's Privacy</h2>
-                    <p className="mb-4">
-                        Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13.
-                    </p>
+<h2>How we collect your Personal Information</h2>
 
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Links to Other Websites</h2>
-                    <p className="mb-4">
-                        Our Service may contain links to other websites that are not operated by Us. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
-                    </p>
+<p>We may collect Personal Information from you whenever you input such information into the Website, related app or provide it to Us in any other way.</p>
 
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Changes to this Privacy Policy</h2>
-                    <p className="mb-4">
-                        We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
-                    </p>
+<p>We may also collect cookies from your computer which enable us to tell when you use the Website and also to help customise your Website experience. As a general rule, however, it is not possible to identify you personally from our use of cookies.</p>
 
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Contact Us</h2>
-                    <p className="mb-4">If you have any questions about this Privacy Policy, You can contact us:</p>
-                    <ul className="list-disc list-inside mb-4">
-                        <li>By email: <a href="mailto:privacy@zentrahosting.xyz" className="text-blue-400">privacy@zentrahosting.xyz</a></li>
-                        <li>By visiting this page on our website: <a href="https://zentrahosting.xyz/contact" rel="external nofollow noopener" target="_blank" className="text-blue-400">https://zentrahosting.xyz/contact</a></li>
-                    </ul>
-                </div>
-            </div>
+<p>We generally don’t collect Sensitive Information, but when we do, we will comply with the preceding paragraph.</p>
+
+<p>Where reasonable and practicable we collect your Personal Information from you only. However, sometimes we may be given information from a third party, in cases like this we will take steps to make you aware of the information that was provided by a third party.</p>
+
+<h2>Purpose of collection</h2>
+
+<p>We collect Personal Information to provide you with the best service experience possible on the Website and keep in touch with you about developments in our business.</p>
+
+<p>We customarily only disclose Personal Information to our service providers who assist us in operating the Website. Your Personal Information may also be exposed from time to time to maintenance and support personnel acting in the normal course of their duties.</p>
+
+<p>By using our Website, you consent to the receipt of direct marketing material. We will only use your Personal Information for this purpose if we have collected such information direct from you, and if it is material of a type which you would reasonably expect to receive from use. We do not use sensitive Personal Information in direct marketing activity. Our direct marketing material will include a simple means by which you can request not to receive further communications of this nature, such as an unsubscribe button link.</p>
+
+<h2>Security, Access and correction</h2>
+
+<p>We store your Personal Information in a way that reasonably protects it from unauthorised access, misuse, modification or disclosure. When we no longer require your Personal Information for the purpose for which we obtained in, we will take reasonable steps to destroy and anonymise or de-identify it. Most of the Personal Information that is stored in our client files and records will be kept for a maximum of 7 years to fulfill our record keeping obligations.</p>
+
+<p>The Australian Privacy Principles:</p>
+
+<ul>
+    <li>permit you to obtain access to the Personal Information we hold about you in certain circumstances (Australian Privacy Principle 12); and</li>
+    <li>allow you to correct inaccurate Personal Information subject to certain exceptions (Australian Privacy Principle 13).</li>
+</ul>
+
+<p>Where you would like to obtain such access, please contact us in writing on the contact details set out at the bottom of this privacy policy.</p>
+
+<h2>Complaint procedure</h2>
+
+<p>If you have a complaint concerning the manner in which we maintain the privacy of your Personal Information, please contact us as on the contact details set out at the bottom of this policy. All complaints will be considered by Chriss Quartz and we may seek further information from you to clarify your concerns. If we agree that your complaint is well founded, we will, in consultation with you, take appropriate steps to rectify the problem. If you remain dissatisfied with the outcome, you may refer the matter to the Office of the Australian Information Commissioner.</p>
+
+<h2>Overseas transfer</h2>
+
+<p>Your Personal Information may be transferred overseas or stored overseas for a variety of reasons. It is not possible to identify each and every country to which your Personal Information may be sent. If your Personal Information is sent to a recipient in a country with data protection laws which are at least substantially similar to the Australian Privacy Principles, and where there are mechanisms available to you to enforce protection of your Personal Information under that overseas law, we will not be liable for a breach of the Australian Privacy Principles if your Personal Information is mishandled in that jurisdiction. If your Personal Information is transferred to a jurisdiction which does not have data protection laws as comprehensive as Australia's, we will take reasonable steps to secure a contractual commitment from the recipient to handle your information in accordance with the Australian Privacy Principles.</p>
+
+<h2>GDPR</h2>
+
+<p>In some circumstances, the European Union General Data Protection Regulation (GDPR) provides additional protection to individuals located in Europe. The fact that you may be located in Europe does not, however, on its own entitle you to protection under the GDPR. Our website does not specifically target customers located in the European Union and we do not monitor the behaviour of individuals in the European Union, and accordingly the GDPR does not apply.</p>
+
+<div class="contact">
+    <h2>How to contact us about privacy</h2>
+    <p>If you have any queries, or if you seek access to your Personal Information, or if you have a complaint about our privacy practices, you can contact us through: <a href="mailto:support@zentrahosting.xyz">support@zentrahosting.xyz</a>.</p>
+</div>
+
+</div>
         </div>
     );
 }
